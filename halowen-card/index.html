@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+           <div class="flip-card">
+            <div class="front">
+                <h2>#HALOWEEN</h2>
+                <h1>haloween partisi nedir?</h1>
+
+               <div class="next-icon">
+                <i class="fa-solid fa-arrow-right"></i>               
+            </div>
+            </div>
+
+            <div class="back">
+                <h1>Haloween</h1>
+                <p>Cadılar Bayramı, her sene 31 Ekim'de kutlanan, öncelikle Pagan ve sonrasında Hristiyan kökleri olmasına rağmen günümüzde seküler bir kutlama halini almış bayram. Çocukların, genellikle korkunç kostümler giyerek, kapı kapı dolaşıp şekerleme ve harçlık topladığı bir bayramdır.</p>
+                <div class="date">
+                    <h5><span>Gün:</span>31 Ekim</h5>
+                    <h5><span>Din:</span>Pagan,Hristiyan</h5>
+                    
+                </div>
+
+                <div class="back-icon">
+                    <i class="fa-solid fa-arrow-left"></i>               
+                </div>
+            </div>
+           </div>
+        </div>
+    
+    
+    <script>
+        const front_icon=document.querySelector(".next-icon")
+        const back=document.querySelector(".back")
+        const back_icon=document.querySelector(".back-icon")
+
+
+        front_icon.addEventListener("click",function(){
+            back.classList.add("return")
+        })
+
+        back_icon.addEventListener("click",function(){
+            back.classList.remove("return")
+        })
+    </script>
+</body>
+</html>
